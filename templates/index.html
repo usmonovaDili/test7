@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogs</title>
+</head>
+<body>
+<h4>Blogs body</h4>
+{% for i in object_list %}
+    {{ i.body }}
+    {{i.create_time }}
+{% endfor %}
+</body>
+</html>
