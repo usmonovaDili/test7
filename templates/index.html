@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Books</h2>
+<ul>
+    {% for n in object_list %}
+    <a href="{% url 'page' %}">
+        <li>{{ n.title }}</li>
+    </a>
+    {% endfor%}
+</ul>
+</body>
+</html>
